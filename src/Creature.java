@@ -1,13 +1,10 @@
-import java.util.ArrayList;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Creature {
     //Attributes
     int intelligens;
     int durability;
     int strength;
-    int awn;
     Random gen = new Random();
     int number = gen.nextInt(0,10) +1;         //Number can be a number between 0-10
 

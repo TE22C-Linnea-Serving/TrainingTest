@@ -1,10 +1,4 @@
-import java.util.ArrayList;
-import java.util.Random;
-
 public class Dinosaur extends Creature{
-    Random gen = new Random();
-
-
 
     //Constructor
     public Dinosaur() {
@@ -12,6 +6,4 @@ public class Dinosaur extends Creature{
         durability = gen.nextInt(0, 10) + 1;
         strength = gen.nextInt(0, 10) + 1;
     }
-
-    //Methods
 }

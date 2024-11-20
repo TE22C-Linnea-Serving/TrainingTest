@@ -1,9 +1,4 @@
-import java.util.ArrayList;
-import java.util.Random;
-
 public class Zombie extends Creature{
-    Random gen = new Random();
-
 
     //Constructor
     public Zombie() {
@@ -11,6 +6,4 @@ public class Zombie extends Creature{
         durability = gen.nextInt(0, 15) + 1;                     //Attributes between 1-15
         strength = gen.nextInt(0, 10) + 1;                       //Attributes between 1-10
     }
-
-    // Methods
 }
