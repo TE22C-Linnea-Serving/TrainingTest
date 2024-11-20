@@ -1,10 +1,13 @@
+import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 public class Creature {
     //Attributes
     int intelligens;
     int durability;
     int strength;
+    int n;
     Random gen = new Random();
     int number = gen.nextInt(0,10) +1;         //Number can be a number between 0-10
 
@@ -31,5 +34,12 @@ public class Creature {
             n3 = 20;
         }
         return n3;
+    }
+
+    public int askPlayer(){
+        System.out.println("\nHow many creatures should each team contain?");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();   //How many creatures the user put in each team
+        return n;
     }
 }

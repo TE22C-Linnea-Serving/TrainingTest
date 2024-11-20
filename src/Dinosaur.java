@@ -1,7 +1,12 @@
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Dinosaur extends Creature{
     Random gen = new Random();
+
+    public ArrayList<Dinosaur> team1= new ArrayList<>();
+
+
 
     //Constructor
     public Dinosaur() {
@@ -10,7 +15,11 @@ public class Dinosaur extends Creature{
         strength = gen.nextInt(0, 10) + 1;
     }
 
+    //Methods
 
-
-
+    public void contain(){
+        for(int i = 0; i<n; i++){
+            team1.add(new Dinosaur());
+        }
+    }
 }
