@@ -4,8 +4,6 @@ import java.util.Random;
 public class Dinosaur extends Creature{
     Random gen = new Random();
 
-    public ArrayList<Dinosaur> team1= new ArrayList<>();
-
 
 
     //Constructor
@@ -16,10 +14,4 @@ public class Dinosaur extends Creature{
     }
 
     //Methods
-
-    public void contain(){
-        for(int i = 0; i<n; i++){
-            team1.add(new Dinosaur());
-        }
-    }
 }

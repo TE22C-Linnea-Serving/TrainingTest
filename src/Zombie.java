@@ -4,8 +4,6 @@ import java.util.Random;
 public class Zombie extends Creature{
     Random gen = new Random();
 
-    public ArrayList<Zombie> team2 = new ArrayList<>();
-
 
     //Constructor
     public Zombie() {
@@ -15,9 +13,4 @@ public class Zombie extends Creature{
     }
 
     // Methods
-    public void contain2(){
-        for(int i = 0; i<n; i++){
-            team2.add(new Zombie());
-        }
-    }
 }
